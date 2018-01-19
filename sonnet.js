@@ -19,8 +19,10 @@
    console.log(sonnet);
 
    //Replace all occurances of the string "the" with "a large".
-   var sonnet = sonnet.replace(/the /gi, "a large ");
-   console.log(sonnet);
+   sonnet = sonnet.replace(/the /g, "a large ");
+
+   sonnet = sonnet.replace(/The /g, "A large ");
+   console.log("This is replacement: ", sonnet);
 
    // Set the content of the sonnet div with the new string
    document.getElementById("sonnet").innerHTML = sonnet;
